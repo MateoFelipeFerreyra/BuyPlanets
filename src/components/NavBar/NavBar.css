@@ -1,0 +1,10 @@
+li{
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.imglogo{
+    width: 7rem;
+}
+.bg-index {
+    background-color: rgb(120, 27, 249);
+}

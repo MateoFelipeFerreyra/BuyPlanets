@@ -1,4 +1,5 @@
 import './NavBar.css'
+import { NavLink} from "react-router-dom"
 import CartWidget from '../CartWidget/CartWidget'
 import  imglogo from '../../assets/img/logo2.png'
 
@@ -15,10 +16,10 @@ const NavBar = () => {
                 <nav className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            Home
+                        {/* <NavLink to={`/categoria/3`}> Planets 2 </NavLink> */}
                         </li>
                         <li className="nav-item">
-                            Planets
+                        {/* <NavLink to={`/categoria/3`}> Planets 3 </NavLink> */}
                         </li>
                     </ul>
                 </nav>

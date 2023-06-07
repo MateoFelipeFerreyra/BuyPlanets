@@ -1,5 +1,5 @@
 import './NavBar.css'
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import CartWidget from '../CartWidget/CartWidget'
 import imglogo from '../../assets/img/logo2.png'
 
@@ -9,8 +9,7 @@ const NavBar = () => {
     return (
         <header className="navbar navbar-expand-lg navbar navbar-dark bg-index">
             <div className="container-fluid">
-                {/* <img className="imglogo" src={imglogo} alt="logo" /> */}
-                <NavLink to={"/"}><h1>BuyPlanets</h1></NavLink>
+                <Link to={"/"}><img className="imglogo" src={imglogo} alt="logo" /></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
                 </button>

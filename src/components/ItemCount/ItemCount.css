@@ -1,17 +1,6 @@
-li{
-    margin: 0.5rem;
-    cursor: pointer;
-}
-.imglogo{
-    width: 9rem;
-}
-.bg-index {
+.miBtn {
     background-color: rgb(120, 27, 249);
-}
-
-.nav-item > a{
-    background-color: rgba(24, 0, 56, 0.592);
-    border-radius: 20px;
+    border: none;
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -20,4 +9,11 @@ li{
     font-size: 16px;
     margin: 5px;
     cursor: pointer;
+    border-radius: 15px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
 }

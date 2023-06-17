@@ -1,6 +1,6 @@
-import React from 'react'
-//1) Importar una función de React que me ayuda a trabajar con el estado. (useState)
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
+import './ItemCount.css'
 
 const ItemCount = ({ inicial, stock, funcionAgregar }) => {
     const [contador, setContador] = useState(inicial);
@@ -19,13 +19,14 @@ const ItemCount = ({ inicial, stock, funcionAgregar }) => {
 
     return (
         <>
-            <div>
-                <button onClick={decrementar}> - </button>
-                <p> {contador} </p>
-                <button onClick={incrementar}> + </button>
-            </div>
-            <button onClick={()=>funcionAgregar(contador)}>Agregar al Carrito</button>
-        </>
+        <div>
+            <button className='miBtn' onClick={ decrementar }> - </button>
+            <strong> {contador} </strong>
+            <button className='miBtn' onClick={ incrementar }> + </button>
+        </div>
+        { stock > 0 && <button className='miBtn' onClick={()=> funcionAgregar(contador)}> Agregar al Carrito </button>}
+        <Link to="/" className = "miBtn" > Seguir Comprando</Link>
+    </>
     )
 }
 

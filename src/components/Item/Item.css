@@ -1,5 +1,5 @@
 .cardProducto {
-    background-color: rgb(160, 27, 249);
+    background-color: rgba(255, 255, 255, 0.688);
     border-radius: 10px;
     width: 15rem;
     padding: 1rem;
@@ -9,10 +9,10 @@
     align-items: center;
 }
 .cardProducto h3{
-    color: white    ;
+    color: rgb(0, 0, 0)    ;
 }
 .cardProducto {
-    color: white    ;
+    color: rgb(0, 0, 0)    ;
 }
 
 .imgProducto {
